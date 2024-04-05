@@ -11,12 +11,15 @@ app.locals.characters = [
 ]
 
 app.get('/api/v1/characters', (request, response) => {
-    response.json(app.locals.characters)
+    response.status(200).json(app.locals.characters)
 })
 
-// app.get('/', (request, response) => {
-//   response.send('Oh hey Pet Box');
-// });
+app.get('/api/v1/characters/:id', (request, response) => {
+    const { id } = request.params;
+    const character = app.locals.characters.find(char => char.id === id);
+    response.status(200).json(character)
+    //add sad path for nonexistent character
+})
 
 
 app.listen(app.get('port'), () => {
