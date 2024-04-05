@@ -40,7 +40,7 @@ app.post('/api/v1/characters', (request, response) => {
             return
         }
     }
-    
+
     // const charNames = app.locals.characters.map(char => char.name)
     // if (charNames.includes(character.name)) {
     //     return response.status(409)
@@ -49,6 +49,20 @@ app.post('/api/v1/characters', (request, response) => {
     const { name, hobbies = [], avatar = 'https://cdn2.steamgriddb.com/icon/2119b8d43eafcf353e07d7cb5554170b/32/256x256.png'} = character;
     app.locals.characters.push({id, name, hobbies, avatar})
     response.status(201).json({id, name, hobbies, avatar})
+})
+
+app.delete('/api/v1/characters/:id', (request, response) => {
+    const { id } = request.params;
+    console.log(id)
+    const character = app.locals.characters.find(char => char.id === id);
+    if (!character) {
+        return response.sendStatus(404);
+    } else {
+        app.locals.characters.splice((app.locals.characters.indexOf(character)), 1)
+        console.log(app.locals.characters)
+        response.sendStatus(202)
+    }
+
 })
 
 
