@@ -32,7 +32,7 @@ app.get('/api/v1/characters/:id', (request, response) => {
 app.post('/api/v1/characters', (request, response) => {
     // const id = nanoid(10);
     const character = request.body
-    const id = Date.now()
+    const id = Date.now().toString()
 
     for (let requiredParameter of ['name']) {
         if (!character[requiredParameter]) {
@@ -40,6 +40,11 @@ app.post('/api/v1/characters', (request, response) => {
             return
         }
     }
+    
+    // const charNames = app.locals.characters.map(char => char.name)
+    // if (charNames.includes(character.name)) {
+    //     return response.status(409)
+    // }
 
     const { name, hobbies = [], avatar = 'https://cdn2.steamgriddb.com/icon/2119b8d43eafcf353e07d7cb5554170b/32/256x256.png'} = character;
     app.locals.characters.push({id, name, hobbies, avatar})
