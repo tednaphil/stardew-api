@@ -7,7 +7,7 @@ app.locals.title = 'Stardew Valley NPCs';
 app.locals.characters = [
     {id: '1', name: 'Bellamy', hobbies: ['playing', 'eating', 'picking flowers'], avatar: ''},
     {id: '2', name: 'Tayla', hobbies: ['shopping', 'gardening', 'skating'], avatar: ''},
-    {id: '3', name: 'Tayor', hobbies: ['music', 'hockey', 'mixology'], avatar: ''}, 
+    {id: '3', name: 'Tayor', hobbies: ['music', 'hockey', 'mixology'], avatar: ''},
 ]
 
 app.get('/api/v1/characters', (request, response) => {
@@ -19,7 +19,6 @@ app.get('/api/v1/characters/:id', (request, response) => {
     const character = app.locals.characters.find(char => char.id === id);
     if (!character) {
         return response.sendStatus(404);
-        // response.status(404).json({error: 'Character not found. Try a different ID'})
     } else {
         response.status(200).json(character)
     }
