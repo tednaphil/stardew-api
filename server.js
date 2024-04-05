@@ -5,18 +5,24 @@ app.use(express.json());
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Stardew Valley NPCs';
 app.locals.characters = [
-    {id: 1, name: 'Bellamy', hobbies: ['playing', 'eating', 'picking flowers']},
-    {id: 2, name: 'Tayla', hobbies: ['shopping', 'gardening', 'skating']},
-    {id: 3, name: 'Tayor', hobbies: ['music', 'hockey', 'mixology']}, 
+    {id: '1', name: 'Bellamy', hobbies: ['playing', 'eating', 'picking flowers'], avatar: ''},
+    {id: '2', name: 'Tayla', hobbies: ['shopping', 'gardening', 'skating'], avatar: ''},
+    {id: '3', name: 'Tayor', hobbies: ['music', 'hockey', 'mixology'], avatar: ''},
 ]
 
 app.get('/api/v1/characters', (request, response) => {
-    response.json(app.locals.characters)
+    response.status(200).json(app.locals.characters)
 })
 
-// app.get('/', (request, response) => {
-//   response.send('Oh hey Pet Box');
-// });
+app.get('/api/v1/characters/:id', (request, response) => {
+    const { id } = request.params;
+    const character = app.locals.characters.find(char => char.id === id);
+    if (!character) {
+        return response.sendStatus(404);
+    } else {
+        response.status(200).json(character)
+    }
+})
 
 
 app.listen(app.get('port'), () => {
