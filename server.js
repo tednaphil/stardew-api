@@ -51,6 +51,19 @@ app.post('/api/v1/characters', (request, response) => {
     response.status(201).json({id, name, hobbies, avatar})
 })
 
+app.put('/api/v1/characters/:id', (request, response) => {
+    const { id } = request.params
+    const { hobby, avatar } = request.body
+    const character = app.locals.characters.find(char => char.id === id);
+    if (hobby && !character.hobbies.includes(hobby)) {
+        character.hobbies = [...character.hobbies, hobby]
+    }
+    if (avatar) {
+        character.avatar = avatar
+    }
+    response.status(204).json(character)
+})
+
 app.delete('/api/v1/characters/:id', (request, response) => {
     const { id } = request.params;
     const character = app.locals.characters.find(char => char.id === id);
