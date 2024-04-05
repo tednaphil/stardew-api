@@ -13,6 +13,9 @@ app.locals.characters = [
 ]
 
 app.get('/api/v1/characters', (request, response) => {
+    if (!app.locals.characters) {
+        return response.sendStatus(404)
+    }
     response.status(200).json(app.locals.characters)
 })
 
@@ -28,14 +31,19 @@ app.get('/api/v1/characters/:id', (request, response) => {
 
 app.post('/api/v1/characters', (request, response) => {
     // const id = nanoid(10);
+    const character = request.body
     const id = Date.now()
-    // const newCharacter = request.body;
-    const { name, hobbies, avatar = 'https://cdn2.steamgriddb.com/icon/2119b8d43eafcf353e07d7cb5554170b/32/256x256.png'} = request.body
-    // newCharacter.id = id
+
+    for (let requiredParameter of ['name']) {
+        if (!character[requiredParameter]) {
+            response.status(422).json({error: `Expected format: { name: <string> }. You're missing a ${requiredParameter} in the request body!`})
+            return
+        }
+    }
+
+    const { name, hobbies = [], avatar = 'https://cdn2.steamgriddb.com/icon/2119b8d43eafcf353e07d7cb5554170b/32/256x256.png'} = character;
     app.locals.characters.push({id, name, hobbies, avatar})
     response.status(201).json({id, name, hobbies, avatar})
-
-    //setup default value for avatar src
 })
 
 
