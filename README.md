@@ -2,18 +2,20 @@
 
 Starting the server
 ```
-git clone worta
+git clone git@github.com:tednaphil/stardew-api.git
 cd stardew-api
 node server.js
 ```
-Use the command node server.js to begin the sightings API server.
+Server will run at `http://localhost:3000/`
+## Endpoints
+| Method | Endpoint | Request Body | Sample Response |
+--- | --- | --- | ---
+`GET` | `'/api/v1/characters'` | n/a | `[{id: "1", name: "Abigail", hobbies: ["playing flute", "mining", "playing video games"], avatar: "URL"}]`
+`GET` | `'/api/v1/characters/:id'` | n/a | `{id: "1", name: "Abigail", hobbies: ["playing flute", "mining", "playing video games"], avatar: "URL"}`
+`PUT` | `'/api/v1/characters/:id'` | `{hobby: "shopping", avatar: "newURL"}` | `{id: "1", name: "Abigail", hobbies: ["playing flute", "mining", "playing video games, shopping"], avatar: "newURL"}`
+`POST` | `'/api/v1/characters'` | `{name: "Ellis", hobbies: ["hobby1", "hobby2"], avatar: "URL"}` | `{id: "2", name: "Ellis", hobbies: ["hobby1", "hobby2"], avatar: "URL"}`
+`DELETE` | `'/api/v1/characters/:id'` | n/a | n/a
 
-Endpoints
-Method	Endpoint	Request Body	Sample Response
-GET	'/sightings'	n/a	[{id: 1, location: 'Denver, CO', description: 'Bright lights over Cheesman Park'}]
-GET	'/sightings/:id'	n/a	{id: 1, location: 'Denver, CO', description: 'Bright lights over Cheesman Park'}
-POST	'/sightings'	{location: 'Somewhere', description: 'Something'}	{id: 2, location: 'Somewhere', description: 'Something'}
-DELETE	'/sightings/:id'	n/a	[{id: 2, location: 'Somewhere', description: 'Something'}]
-Notes
-New sightings do not require an ID from the client
-DELETE requests return an array of all the sightings except the one that was deleted
+### Notes
+* POST requests only require a `name` parameter. Default values will be assigned to hobbies and/or avatar.
+* PUT requests only require a hobby OR an avatar. Both are not required
