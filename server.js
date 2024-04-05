@@ -197,6 +197,7 @@ app.locals.characters = [
         "avatar": ""
       }
 ]
+//handroll avatars and additional properties
 
 app.get('/api/v1/characters', (request, response) => {
     if (!app.locals.characters) {
