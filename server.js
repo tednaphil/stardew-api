@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
+// const { nanoid } = require('nanoid');
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Stardew Valley NPCs';
@@ -26,7 +27,14 @@ app.get('/api/v1/characters/:id', (request, response) => {
 })
 
 app.post('/api/v1/characters', (request, response) => {
+    // const id = nanoid(10);
+    const id = Date.now()
+    const newCharacter = request.body;
+    newCharacter.id = id
+    app.locals.characters.push(newCharacter)
+    response.status(201).json(newCharacter)
 
+    //setup default value for avatar src
 })
 
 
