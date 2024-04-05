@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+app.use(express.json());
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Stardew Valley NPCs';
@@ -9,8 +10,8 @@ app.locals.characters = [
     {id: 3, name: 'Tayor', hobbies: ['music', 'hockey', 'mixology']}, 
 ]
 
-app.get('/', (request, response) => {
-    response.send(app.locals.characters)
+app.get('/api/v1/characters', (request, response) => {
+    response.json(app.locals.characters)
 })
 
 // app.get('/', (request, response) => {
