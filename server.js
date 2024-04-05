@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
+import { nanoid } from 'nanoid';
 
 app.set('port', process.env.PORT || 3000);
 app.locals.title = 'Stardew Valley NPCs';
@@ -22,6 +23,10 @@ app.get('/api/v1/characters/:id', (request, response) => {
     } else {
         response.status(200).json(character)
     }
+})
+
+app.post('/api/v1/characters', (request, response) => {
+
 })
 
 
