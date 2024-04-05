@@ -53,17 +53,15 @@ app.post('/api/v1/characters', (request, response) => {
 
 app.delete('/api/v1/characters/:id', (request, response) => {
     const { id } = request.params;
-    console.log(id)
     const character = app.locals.characters.find(char => char.id === id);
     if (!character) {
         return response.sendStatus(404);
     } else {
         app.locals.characters.splice((app.locals.characters.indexOf(character)), 1)
-        console.log(app.locals.characters)
         response.sendStatus(202)
     }
-
 })
+//refactor and use chars variable to reduce redundancy
 
 
 app.listen(app.get('port'), () => {
