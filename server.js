@@ -226,7 +226,7 @@ app.post('/api/v1/characters', (request, response) => {
             response.status(422).json({error: `Expected format: { name: <string> }. You're missing a ${requiredParameter} in the request body!`})
             return
         }
-    }
+    };
 
     // const charNames = app.locals.characters.map(char => char.name)
     // if (charNames.includes(character.name)) {
@@ -239,18 +239,30 @@ app.post('/api/v1/characters', (request, response) => {
 })
 
 app.put('/api/v1/characters/:id', (request, response) => {
-    const { id } = request.params
-    const { hobby, avatar } = request.body
+    const { id } = request.params;
+    const update = request.body;
     const character = app.locals.characters.find(char => char.id === id);
+
+    for (let requiredParameter of ['hobby' || 'avatar']) {
+        if (!update[requiredParameter]) {
+            response.status(422).json({error: `Expected format: { hobby: <string>, avatar: <URLstring>}. Please include a new hobby or avatar link in the request body!`})
+            return
+        }
+    };
+
+    if (!character) {
+        return response.sendStatus(404)
+    };
+
+    const { hobby, avatar } = request.body
     if (hobby && !character.hobbies.includes(hobby)) {
         character.hobbies = [...character.hobbies, hobby]
-    }
+    };
     if (avatar) {
         character.avatar = avatar
-    }
+    };
     response.status(200).json(character) //should I go back to using 204 status code instead?
 })
-//add error status for unsuccesful puts and/or missing parameters
 
 app.delete('/api/v1/characters/:id', (request, response) => {
     const { id } = request.params;
@@ -260,7 +272,7 @@ app.delete('/api/v1/characters/:id', (request, response) => {
     } else {
         app.locals.characters.splice((app.locals.characters.indexOf(character)), 1)
         response.sendStatus(202)
-    }
+    };
 })
 //refactor to use chars variable to reduce redundancy
 
