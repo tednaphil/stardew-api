@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
-app.use(express.json());
 const crypto = require('crypto');
 const characters = require('./data.js');
+const cors = require('cors');
+
+app.use(cors());
+app.use(express.json());
 
 app.set('port', process.env.PORT || 3000);
 // app.use((req, res, next) => {
