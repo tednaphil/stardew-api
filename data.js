@@ -1,7 +1,7 @@
 const characters = [
-    {id: 'a', name: 'Bellamy', hobbies: ['playing', 'eating', 'picking flowers'], avatar: ''},
-    {id: 'b', name: 'Tayla', hobbies: ['shopping', 'gardening', 'skating'], avatar: ''},
-    {id: 'c', name: 'Tayor', hobbies: ['music', 'hockey', 'mixology'], avatar: ''},
+    // {id: 'a', name: 'Bellamy', hobbies: ['playing', 'eating', 'picking flowers'], avatar: ''},
+    // {id: 'b', name: 'Tayla', hobbies: ['shopping', 'gardening', 'skating'], avatar: ''},
+    // {id: 'c', name: 'Tayor', hobbies: ['music', 'hockey', 'mixology'], avatar: ''},
     {
         "id": "1",
         "name": "Abigail",
@@ -108,86 +108,89 @@ const characters = [
         "id": "18",
         "name": "George",
         "hobbies": ["watching TV", "complaining", "reading"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/78/George.png"
       },
       {
         "id": "19",
         "name": "Gus",
         "hobbies": ["cooking", "fishing", "playing darts"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png"
       },
       {
         "id": "20",
         "name": "Jas",
         "hobbies": ["playing with animals", "reading", "drawing"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png"
       },
       {
         "id": "21",
         "name": "Jodi",
         "hobbies": ["cooking", "gardening", "exercising"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png"
       },
       {
         "id": "22",
         "name": "Kent",
         "hobbies": ["playing video games", "hunting", "exercising"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png"
       },
       {
         "id": "23",
         "name": "Krobus",
         "hobbies": ["collecting artifacts", "playing chess", "reading"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png"
       },
+      //Leo, Lewis
       {
         "id": "24",
         "name": "Linus",
         "hobbies": ["foraging", "camping", "reading"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png"
       },
       {
         "id": "25",
         "name": "Marnie",
         "hobbies": ["farming", "taking care of animals", "cooking"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png"
       },
       {
         "id": "26",
         "name": "Pam",
         "hobbies": ["drinking", "watching TV", "complaining"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png"
       },
       {
         "id": "27",
         "name": "Pierre",
         "hobbies": ["business", "cooking", "gardening"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png"
       },
       {
         "id": "28",
         "name": "Robin",
         "hobbies": ["carpentry", "gardening", "cooking"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png"
       },
       {
         "id": "29",
         "name": "Sandy",
         "hobbies": ["exploring", "collecting rare items", "gardening"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png"
       },
       {
         "id": "30",
         "name": "Vincent",
         "hobbies": ["playing with friends", "drawing", "exploring"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png"
       },
       {
         "id": "31",
         "name": "Willy",
         "hobbies": ["fishing", "exploring", "cooking"],
-        "avatar": ""
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png"
       }
+      //wizard
+      //consider including non-giftable folks - you can't befriend them though so it may not be useful
 ]
 //handroll avatars and additional properties (e.g. birthday, species, fav gifts, family)
 
