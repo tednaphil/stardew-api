@@ -140,56 +140,73 @@ const characters = [
         "hobbies": ["collecting artifacts", "playing chess", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png"
       },
-      //Leo, Lewis
       {
         "id": "24",
+        "name": "Leo",
+        "hobbies": ["stargazing", "camping", "drawing"],
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png"
+      },
+      {
+        "id": "25",
+        "name": "Lewis",
+        "hobbies": ["governing", "history", "geography"],
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png"
+      },
+      {
+        "id": "26",
         "name": "Linus",
         "hobbies": ["foraging", "camping", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png"
       },
       {
-        "id": "25",
+        "id": "27",
         "name": "Marnie",
         "hobbies": ["farming", "taking care of animals", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png"
       },
       {
-        "id": "26",
+        "id": "28",
         "name": "Pam",
         "hobbies": ["drinking", "watching TV", "complaining"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png"
       },
       {
-        "id": "27",
+        "id": "29",
         "name": "Pierre",
         "hobbies": ["business", "cooking", "gardening"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png"
       },
       {
-        "id": "28",
+        "id": "30",
         "name": "Robin",
         "hobbies": ["carpentry", "gardening", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png"
       },
       {
-        "id": "29",
+        "id": "31",
         "name": "Sandy",
         "hobbies": ["exploring", "collecting rare items", "gardening"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png"
       },
       {
-        "id": "30",
+        "id": "33",
         "name": "Vincent",
         "hobbies": ["playing with friends", "drawing", "exploring"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png"
       },
       {
-        "id": "31",
+        "id": "33",
         "name": "Willy",
         "hobbies": ["fishing", "exploring", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png"
+      },
+      {
+        "id": "34",
+        "name": "Wizard",
+        "hobbies": ["alchemy", "potion brewing", "divination"],
+        "avatar": "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png"
+
       }
-      //wizard
       //consider including non-giftable folks - you can't befriend them though so it may not be useful
 ]
 //handroll avatars and additional properties (e.g. birthday, species, fav gifts, family)
