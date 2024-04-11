@@ -7,7 +7,8 @@ git clone git@github.com:tednaphil/stardew-api.git
 cd stardew-api
 node server.js
 ```
-Server will run at `http://localhost:3000/`
+Server will run at `http://localhost:3000`
+
 Deployed API link `https://stardew-api.onrender.com`
 
 ## Endpoints
