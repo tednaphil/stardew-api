@@ -1,7 +1,7 @@
 {
   "name": "stardew-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "A practice server built with Express",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,14 @@
     "url": "git+https://github.com/tednaphil/stardew-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tayla Phillips",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tednaphil/stardew-api/issues"
   },
   "homepage": "https://github.com/tednaphil/stardew-api#readme",
   "dependencies": {
-    "express": "^4.19.2",
-    "nanoid": "^5.0.6"
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   }
 }
