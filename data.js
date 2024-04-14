@@ -220,7 +220,7 @@ const characters = [
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png"
       },
       {
-        "id": "33",
+        "id": "32",
         "name": "Vincent",
         "birthday": '',
         "hobbies": ["playing with friends", "drawing", "exploring"],
