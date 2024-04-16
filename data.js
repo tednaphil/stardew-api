@@ -8,7 +8,7 @@ const characters = [
         "birthday": 'Fall 13',
         "hobbies": ["playing flute", "mining", "playing video games"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/88/Abigail.png",
-        "favGifts": []
+        "favGifts": ['Amethyst', 'Banana Pudding', 'Blackberry Cobbler', 'Chocolate Cake', 'Monster Compendium', 'Pufferfish', 'Pumpkin', 'Spicy Eel']
       },
       {
         "id": "2",
@@ -16,7 +16,7 @@ const characters = [
         "birthday": 'Summer 13',
         "hobbies": ["playing football", "working out", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/0/04/Alex.png",
-        "favGifts": []
+        "favGifts": ['Complete Breakfast', 'Jack Be Nimble, Jack Be Thick', 'Salmon Dinner']
       },
       {
         "id": "3",
@@ -24,7 +24,7 @@ const characters = [
         "birthday": 'Fall 5',
         "hobbies": ["writing", "reading", "fishing"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/b/bd/Elliott.png",
-        "favGifts": []
+        "favGifts": ['Crab Cakes', 'Duck Feather', 'Lobster', 'Pomegranate', 'Squid Ink', 'Tom Kha Soup']
       },
       {
         "id": "4",
@@ -32,7 +32,7 @@ const characters = [
         "birthday": 'Spring 27',
         "hobbies": ["sewing", "making clothes", "baking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/2/28/Emily.png",
-        "favGifts": []
+        "favGifts": ['Amethyst', 'Aquamarine', 'Cloth', 'Emerald', 'Jade', 'Ruby', 'Survival Burger', 'Topaz', 'Wool']
       },
       {
         "id": "5",
@@ -40,7 +40,7 @@ const characters = [
         "birthday": 'Spring 14',
         "hobbies": ["photography", "shopping", "sunbathing"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Haley.png",
-        "favGifts": []
+        "favGifts": ['Coconut', 'Fruit Salad', 'Pink Cake', 'Sunflower']
       },
       {
         "id": "6",
@@ -48,7 +48,7 @@ const characters = [
         "birthday": 'Winter 14',
         "hobbies": ["medicine", "flying drones", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/9/95/Harvey.png",
-        "favGifts": []
+        "favGifts": ['Coffee', 'Pickles', 'Super Meal', 'Truffle Oil', 'Wine']
       },
       {
         "id": "7",
@@ -56,7 +56,7 @@ const characters = [
         "birthday": 'Winter 23',
         "hobbies": ["painting", "sculpting", "foraging"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/e/e6/Leah.png",
-        "favGifts": []
+        "favGifts": ['Goat Cheese', 'Poppyseed Muffin', 'Salad', 'Stir Fry', 'Truffle', 'Vegetable Medley', 'Wine']
       },
       {
         "id": "8",
@@ -64,7 +64,7 @@ const characters = [
         "birthday": 'Summer 10',
         "hobbies": ["inventing", "building robots", "playing video games"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/f/f8/Maru.png",
-        "favGifts": []
+        "favGifts": ['Battery Pack', 'Cauliflower', 'Cheese Cauliflower', 'Diamond', 'Gold Bar', 'Iridium Bar', 'Miner\'s treat', 'Pepper Poppers', 'Radioactive Bar', 'Rhubarb Pie', 'Strawberry']
       },
       {
         "id": "9",
@@ -72,7 +72,7 @@ const characters = [
         "birthday": 'Fall 2',
         "hobbies": ["reading", "helping others", "farming"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/a/ab/Penny.png",
-        "favGifts": []
+        "favGifts": ['Diamond', 'Emerald', 'Melon', 'Poppy', 'Poppyseed Muffin', 'Red Plate', 'Roots Platter', 'Sandfish', 'Tom Kha Soup']
       },
       {
         "id": "10",
@@ -80,7 +80,7 @@ const characters = [
         "birthday": 'Summer 17',
         "hobbies": ["playing guitar", "skateboarding", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/9/94/Sam.png",
-        "favGifts": []
+        "favGifts": ['Cactus Fruit', 'Maple Bar', 'Pizza', 'Tigerseye']
       },
       {
         "id": "11",
@@ -88,7 +88,7 @@ const characters = [
         "birthday": 'Winter 10',
         "hobbies": ["programming", "playing video games", "playing guitar"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/a/a8/Sebastian.png",
-        "favGifts": []
+        "favGifts": ['Frozen Tear', 'Obsidian', 'Pumpkin Soup', 'Sashimi', 'Void Egg']
       },
       {
         "id": "12",
@@ -96,7 +96,7 @@ const characters = [
         "birthday": 'Spring 20',
         "hobbies": ["raising chickens", "drinking", "playing video games"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/8b/Shane.png",
-        "favGifts": []
+        "favGifts": ['Beer', 'Hot Pepper', 'Pepper Poppers', 'Pizza']
       },
       {
         "id": "13",
@@ -104,7 +104,7 @@ const characters = [
         "birthday": 'Winter 7',
         "hobbies": ["gardening", "cooking", "writing"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/87/Caroline.png",
-        "favGifts": []
+        "favGifts": ['Fish Taco', 'Green Tea', 'Summer Spangle', 'Tropical Curry']
       },
       {
         "id": "14",
@@ -112,7 +112,7 @@ const characters = [
         "birthday": 'Winter 26',
         "hobbies": ["blacksmithing", "mining", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/3/31/Clint.png",
-        "favGifts": []
+        "favGifts": ['Amethyst', 'Aquamarine', 'Artichoke Dip', 'Emerald', 'Fiddlehead Risotto', 'Gold Bar', 'Iridium Bar', 'Jade', 'Omni Geode', 'Ruby', 'Topaz']
       },
       {
         "id": "15",
@@ -120,7 +120,7 @@ const characters = [
         "birthday": 'Summer 19',
         "hobbies": ["science", "gardening", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/f/f9/Demetrius.png",
-        "favGifts": []
+        "favGifts": ['Bean Hotpot', 'Ice Cream', 'Rice Pudding', 'Strawberry']
       },
       {
         "id": "16",
@@ -128,7 +128,7 @@ const characters = [
         "birthday": 'Summer 22',
         "hobbies": ["gemology", "mining", "foraging"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/e/ed/Dwarf.png",
-        "favGifts": []
+        "favGifts": ['Amethyst', 'Aquamarine', 'Emerald', 'Jade', 'Lava Eel', 'Lemon Stone', 'Omni Geode', 'Ruby', 'Topaz']
       },
       {
         "id": "17",
@@ -136,7 +136,7 @@ const characters = [
         "birthday": 'Winter 20',
         "hobbies": ["knitting", "baking", "gardening"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/8e/Evelyn.png",
-        "favGifts": []
+        "favGifts": ['Beet', 'Chocolate Cake', 'Diamond', 'Fairy Rose', 'Stuffing', 'Tulip', 'Raisins']
       },
       {
         "id": "18",
@@ -144,7 +144,7 @@ const characters = [
         "birthday": 'Fall 24',
         "hobbies": ["watching TV", "complaining", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/78/George.png",
-        "favGifts": []
+        "favGifts": ['Fried Mushroom', 'Leek']
       },
       {
         "id": "19",
@@ -152,7 +152,7 @@ const characters = [
         "birthday": 'Summer 8',
         "hobbies": ["cooking", "fishing", "playing darts"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/52/Gus.png",
-        "favGifts": []
+        "favGifts": ['Diamond', 'Escargot', 'Fish Taco', 'Orange', 'Tropical Curry']
       },
       {
         "id": "20",
@@ -160,7 +160,7 @@ const characters = [
         "birthday": 'Summer 4',
         "hobbies": ["playing with animals", "reading", "drawing"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/55/Jas.png",
-        "favGifts": []
+        "favGifts": ['Fairy Rose', 'Pink Cake', 'Plum Pudding']
       },
       {
         "id": "21",
@@ -168,7 +168,7 @@ const characters = [
         "birthday": 'Fall 11',
         "hobbies": ["cooking", "gardening", "exercising"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/41/Jodi.png",
-        "favGifts": []
+        "favGifts": ['Chocolate Cake', 'Crispy Bass', 'Diamond', 'Eggplant Parmesan', 'Fried Eerl', 'Pancakes', 'Rhubarb Pie', 'Vegetable Medley']
       },
       {
         "id": "22",
@@ -176,7 +176,7 @@ const characters = [
         "birthday": 'Spring 4',
         "hobbies": ["playing video games", "hunting", "exercising"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/9/99/Kent.png",
-        "favGifts": []
+        "favGifts": ['Fiddlehead Risotto', 'Roasted Hazelnuts']
       },
       {
         "id": "23",
@@ -184,7 +184,7 @@ const characters = [
         "birthday": 'Winter 1',
         "hobbies": ["collecting artifacts", "playing chess", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/71/Krobus.png",
-        "favGifts": []
+        "favGifts": ['Diamond', 'Iridium Bar', 'Monster Compendium', 'Pumpkin', 'Void Egg', 'Void Mayonnaise', 'Wild Horseradish']
       },
       {
         "id": "24",
@@ -192,7 +192,7 @@ const characters = [
         "birthday": 'Summer 26',
         "hobbies": ["stargazing", "camping", "drawing"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1d/Leo.png",
-        "favGifts": []
+        "favGifts": ['Duck Feather', 'Mango', 'Ostrich Egg', 'Poi']
       },
       {
         "id": "25",
@@ -200,7 +200,7 @@ const characters = [
         "birthday": 'Spring 7',
         "hobbies": ["governing", "history", "geography"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/2/2b/Lewis.png",
-        "favGifts": []
+        "favGifts": ['Autumn\'s Bounty', 'Glazed Yams', 'Green Tea', 'Hot Pepper', 'Vegetable Medley']
       },
       {
         "id": "26",
@@ -208,7 +208,7 @@ const characters = [
         "birthday": 'Winter 3',
         "hobbies": ["foraging", "camping", "reading"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/3/31/Linus.png",
-        "favGifts": []
+        "favGifts": ['Blueberry Tart', 'Cactus Fruit', 'Coconut', 'Dish O\' The Sea', 'The Alleyway Buffet', 'Yam']
       },
       {
         "id": "27",
@@ -216,7 +216,7 @@ const characters = [
         "birthday": 'Fall 18',
         "hobbies": ["farming", "taking care of animals", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/5/52/Marnie.png",
-        "favGifts": []
+        "favGifts": ['Diamond', 'Farmer\'s Lunch', 'Pink Cake', 'Pumpkin Pie']
       },
       {
         "id": "28",
@@ -224,7 +224,7 @@ const characters = [
         "birthday": 'Spring 18',
         "hobbies": ["drinking", "watching TV", "complaining"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/d/da/Pam.png",
-        "favGifts": []
+        "favGifts": ['Beer', 'Cactus Fruit', 'Glazed Yams', 'Mead', 'Pale Ale', 'Parsnip', 'Parsnip Soup', 'Piña Colada']
       },
       {
         "id": "29",
@@ -232,7 +232,7 @@ const characters = [
         "birthday": 'Spring 26',
         "hobbies": ["business", "cooking", "gardening"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/7/7e/Pierre.png",
-        "favGifts": ['Complete Breakfast', 'Jack Be Nimble, Jack Be Thick', 'Salmon Dinner']
+        "favGifts": ['Fried Calamari', 'Price Catalogue']
       },
       {
         "id": "30",
@@ -240,7 +240,7 @@ const characters = [
         "birthday": 'Fall 21',
         "hobbies": ["carpentry", "gardening", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/1/1b/Robin.png",
-        "favGifts": []
+        "favGifts": ['Goat Cheese', 'Peach', 'Spaghetti', 'Woody\'s Secret']
       },
       {
         "id": "31",
@@ -248,7 +248,7 @@ const characters = [
         "birthday": 'Fall 15',
         "hobbies": ["exploring", "collecting rare items", "gardening"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/4/4e/Sandy.png",
-        "favGifts": []
+        "favGifts": ['Crocus', 'Daffodil', 'Mango Sticky Rice','Sweet Pea']
       },
       {
         "id": "32",
@@ -256,7 +256,7 @@ const characters = [
         "birthday": 'Spring 10',
         "hobbies": ["playing with friends", "drawing", "exploring"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/f/f1/Vincent.png",
-        "favGifts": []
+        "favGifts": ['Cranberry Candy', 'Ginger Ale', 'Grape', 'Pink Cake', 'Snail']
       },
       {
         "id": "33",
@@ -264,7 +264,7 @@ const characters = [
         "birthday": 'Summer 24',
         "hobbies": ["fishing", "exploring", "cooking"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/8/82/Willy.png",
-        "favGifts": []
+        "favGifts": ['Catfish', 'Diamond', 'Iridium Bar', 'Jewels of The Sea', 'Mead', 'Octopus', 'Pumpkin', 'Sea Cucumber', 'Sturgeon', 'The Art O\' Crabbing']
       },
       {
         "id": "34",
@@ -272,11 +272,10 @@ const characters = [
         "birthday": 'Winter 17',
         "hobbies": ["alchemy", "potion brewing", "divination"],
         "avatar": "https://stardewvalleywiki.com/mediawiki/images/c/c7/Wizard.png",
-        "favGifts": []
+        "favGifts": ['Book of Mysteries', 'Purple Mushroom', 'Solar Essence', 'Super Cucumber', 'Void Essence']
 
       }
-      //consider including non-giftable folks - you can't befriend them though so it may not be useful
 ]
-//handroll additional properties (e.g. fav gifts, family)
+
 
 module.exports = {characters}
