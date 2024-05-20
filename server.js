@@ -3,6 +3,13 @@ const app = express();
 const crypto = require('crypto');
 const characters = require('./data.js');
 const cors = require('cors');
+const helmet = require("helmet");
+
+app.use(
+  helmet({
+    crossOriginResourcePolicy: false,
+  })
+);
 
 app.use(cors());
 app.use(express.json());
