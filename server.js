@@ -3,7 +3,8 @@ const app = express();
 const crypto = require('crypto');
 const characters = require('./data.js');
 const cors = require('cors');
-const helmet = require("helmet");
+// const helmet = require('helmet');
+import helmet from "helmet";
 
 app.use(
   helmet({
