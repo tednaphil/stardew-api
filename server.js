@@ -79,15 +79,15 @@ app.put('/api/v1/characters/:id', (request, response) => {
 
 app.delete('/api/v1/characters/:id', (request, response) => {
     const { id } = request.params;
-    const character = app.locals.characters.find(char => char.id === id);
+    const chars = app.locals.characters;
+    const character = chars.find(char => char.id === id);
     if (!character) {
         return response.sendStatus(404);
     } else {
-        app.locals.characters.splice((app.locals.characters.indexOf(character)), 1)
-        response.sendStatus(202)
+        chars.splice((chars.indexOf(character)), 1)
+        response.sendStatus(204)
     };
 })
-//refactor to use chars variable to reduce redundancy
 
 
 app.listen(app.get('port'), () => {
