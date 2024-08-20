@@ -3,13 +3,6 @@ const app = express();
 const crypto = require('crypto');
 const characters = require('./data.js');
 const cors = require('cors');
-// const helmet = require('helmet');
-
-// app.use(
-//   helmet({
-//     crossOriginResourcePolicy: false,
-//   })
-// );
 
 app.use(cors());
 app.use(express.json());
@@ -81,7 +74,7 @@ app.put('/api/v1/characters/:id', (request, response) => {
     if (avatar) {
         character.avatar = avatar
     };
-    response.status(200).json(character) //should I go back to using 204 status code instead?
+    response.status(201).json(character)
 })
 
 app.delete('/api/v1/characters/:id', (request, response) => {
